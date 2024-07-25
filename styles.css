@@ -8,7 +8,9 @@
 .main-cont {
   margin: 50px
 }
-
+.how-to-apply {
+  margin: 20px;
+}
 .digital-card {
   display: flex;
   flex-direction: row;
@@ -27,6 +29,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.head-text {
+  font-size: x-large;
+  font-weight: 800;
+  margin-bottom: 10px;
 }
 
 .vertical-progress {
@@ -95,6 +102,15 @@
     align-items: center;
     margin: 20px;
     gap: 20px;
+  }
+  .vertical-progress {
+    width: 80%;
+    margin: auto;
+    align-items: center;
+  }
+  .head-text, .desc-text {
+    width: 80%;
+    text-align: center;
   }
   .section.block {
     height: 300px;
