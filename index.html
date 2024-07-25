@@ -6,19 +6,23 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="slider.css" />
+    <script
+      src="https://kit.fontawesome.com/2ce7dc39ba.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <main>
       <section class="main-cont">
-        <div class="container">
-          <h1 class="section y-centre">Get your card the digital way</h1>
-          <span class="section y-centre">
+        <div class="digital-card">
+          <h1 style="text-align: center">Get your card the digital way</h1>
+          <span class="y-centre">
             <span>New to Bank</span>
             <label class="switch">
               <input type="checkbox" checked />
               <span class="slider round"></span>
             </label>
-            <span>New to Bank</span>
+            <span>Existing to bank</span>
           </span>
         </div>
         <div class="container1 pinkred">
@@ -63,25 +67,17 @@
               referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen
             ></iframe>
-            <!-- <iframe
-              class="youtube section block"
-              width="100%"
-              src="https://www.youtube.com/embed/VIDEO_ID"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe> -->
           </div>
         </div>
       </section>
       <section class="main-cont2 grey">
         <div class="section2 left-section">
-          <img src="everything-digital.png" />
+          <img class="everything-digital" src="everything-digital.png" />
         </div>
         <div class="section2 right-section">
           <h1>Everything digital now without paper or physical visit</h1>
           <button
-            style="color: white; background-color: red; border-radius: 10px"
+            style="color: white; background-color: #f50057; border-radius: 10px"
           >
             Button Text
           </button>
@@ -97,6 +93,9 @@
         </div>
         <div class="grid">
           <div class="grid-item">
+            <div class="icon">
+              <i class="fa-solid fa-user"></i>
+            </div>
             <p class="card-heading">Card Protection</p>
             <p class="card-desc">
               Secure your card with services like fraud monitoring, duplicate
@@ -104,47 +103,118 @@
             </p>
           </div>
           <div class="grid-item">
+            <div class="icon">
+              <i class="fa-solid fa-user"></i>
+            </div>
             <p class="card-heading">Card Services</p>
             <p class="card-desc">
               Easy to use, providing a seamless and convinient way to spend
             </p>
           </div>
           <div class="grid-item">
+            <div class="icon">
+              <i class="fa-solid fa-user"></i>
+            </div>
             <p class="card-heading">Card Benefits</p>
             <p class="card-desc">
               Easy to use, providing a seamless and convinient way to spend
             </p>
           </div>
           <div class="grid-item">
+            <div class="icon">
+              <i class="fa-solid fa-user"></i>
+            </div>
             <p class="card-heading">Credit Card Authentication</p>
             <p class="card-desc">
               Easy to use, providing a seamless and convinient way to spend
             </p>
           </div>
           <div class="grid-item">
+            <div class="icon">
+              <i class="fa-solid fa-user"></i>
+            </div>
             <p class="card-heading">Control Center</p>
             <p class="card-desc">
               Easy to use, providing a seamless and convinient way to spend
             </p>
           </div>
           <div class="grid-item">
+            <div class="icon">
+              <i class="fa-solid fa-user"></i>
+            </div>
             <p class="card-heading">Locate Branch</p>
             <p class="card-desc">
               Easy to use, providing a seamless and convinient way to spend
             </p>
           </div>
         </div>
+        <button class="view-more-btn">
+          <p style="color: white; padding: 10px">View more</p>
+        </button>
       </section>
       <section class="main-cont4">
         <div class="cards-for-you">
-          <div class="icon-box">abc</div>
-          <div>
-            <p class="card=heading">Cards For You</p>
-            <p class="card-desc">
-              You"ll find the right card for every need in your lif
+          <div class="card-icon">
+            <div class="icon-box"><i class="fa-solid fa-user"></i></div>
+            <div>
+              <p class="card-head">Cards For You</p>
+              <p class="card-desc">
+                You"ll find the right card for every need in your lif
+              </p>
+            </div>
+          </div>
+          <div class="explore-btn">
+            <button>
+              <p style="color: #f50057; padding: 10px">Explore more</p>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="main-cont5 grey">
+        <div class="section5 left-section">
+          <img class="master-credit-card" src="master-credit-card.png" />
+        </div>
+        <div class="section5 right-section">
+          <div id="master-card">
+            <p class="card-head mastering-credit-card">
+              Mastering credit cards now simple
+            </p>
+            <p class="card-desc mastering-credit-card">
+              Managing your credit cards includes spending strategically, timely
+              payments and avoiding frauds
             </p>
           </div>
-          <div class="explore-btn"><button>Explore more</button></div>
+
+          <div class="grid-item2">
+            <div class="icon">
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <p class="card-head">On-time payments</p>
+            <p class="card-desc">prioritize paying on time</p>
+          </div>
+          <div class="grid-item2">
+            <div class="icon">
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <p class="card-head">Review card statements</p>
+            <p class="card-desc">Track expenses through card statements</p>
+          </div>
+          <div class="grid-item2">
+            <div class="icon">
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <p class="card-head">Cash back & rewards</p>
+            <p class="card-desc">Greate way to earn while you spend</p>
+          </div>
+          <div class="grid-item2">
+            <div class="icon">
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <p class="card-head">Avoid frauds</p>
+            <p class="card-desc">
+              Take care of your credit card pin and other details
+            </p>
+          </div>
         </div>
       </section>
     </main>

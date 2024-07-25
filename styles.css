@@ -9,10 +9,21 @@
   margin: 50px
 }
 
+.digital-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px 20px 0;
+  height: 80%;
+  width: auto;
+}
 .y-centre {
+  width: auto;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 10px;
 }
 .pinkred {
   background-color: #f50057;
@@ -24,12 +35,12 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 .youtube {
   flex: 1;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 .section {
   flex: 1;
@@ -58,13 +69,20 @@
     flex-direction: column;
     align-items: center;
   }
+  .digital-card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    gap: 20px;
+  }
   .section.block {
     height: 300px;
   }
   .youtube {
     border-top-right-radius: 0px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
   
 }
@@ -77,10 +95,10 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
-img {
+.everything-digital {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -107,13 +125,10 @@ img {
   .section2 {
     height: auto;
   }
-  img {
-    position: static;
-    transform: none;
-    width: 50%;
-    min-height: 300px;
-  }
+  
   .left-section, .right-section {
+    align-self: center;
+    justify-self: center;
     min-height: 300px;
   }
 }
@@ -173,7 +188,19 @@ img {
 .card-desc {
   text-align: center;
 }
+.view-more-btn {
+  display: none;
+  background-color: #f50057;
+  border-radius: 10px;
+}
 @media (max-width: 1068px) {
+  .main-cont3 {
+    height: auto;
+    padding: 20px;
+  }
+  .view-more-btn {
+    display: block;
+  }
   .grid {
     justify-content: center;
     align-items: center;
@@ -199,4 +226,126 @@ img {
 .main-cont4 {
   height: 300px;
   width: 100%;
+}
+.cards-for-you {
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px;
+  align-items: center;
+  height: 80%;
+  width: auto;
+  background-color: #f50057;
+  border-radius: 20px;
+}
+.card-icon {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.card-head {
+  margin-bottom: 10px;
+  font-size: x-large;
+  font-weight: 800;
+
+}
+
+@media (max-width: 768px) {
+  .cards-for-you {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+  }
+  .card-icon {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .card-head {
+    text-align: center;
+  }
+}
+
+
+/* section 5 */
+.main-cont5 {
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-radius: 20px;
+}
+
+.master-credit-card {
+  max-width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /* max-height: 100%;
+  justify-self: flex-end;
+  object-fit: contain;
+  height: auto; */
+}
+
+.section5 {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+  position: relative;
+  height: 600px;
+  width: 50%;
+}
+#master-card {
+  grid-column: span 2;
+}
+
+.section5.right-section {
+  margin: auto;
+  padding: 20px;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  grid-template-rows: repeat(3, 100px);
+  grid-gap: 50px;
+  height: 500px;
+  justify-content: center;
+  align-items: start;
+}
+
+.section5 .card-desc {
+  opacity: 0.5;
+}
+
+.icon {
+  display: flex;
+  background-color: #f50057;
+  border-radius: 10px;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-item2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .main-cont5 {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .section5.right-section {
+    grid-template-columns: repeat(1, 250px);
+  }
+  #master-card {
+    grid-column: span 1;
+    height: auto;
+  }
 }
